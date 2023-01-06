@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="Entities.DebtEntity">
+        <table name="debt" schema="public" catalog="Debts"/>
+        <attributes>
+            <id name="debtId">
+                <column name="debt_id" precision="-1"/>
+            </id>
+            <basic name="receiver">
+                <column name="receiver"/>
+            </basic>
+            <basic name="debtor">
+                <column name="debtor"/>
+            </basic>
+            <basic name="sum">
+                <column name="sum" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
